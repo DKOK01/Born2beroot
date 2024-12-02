@@ -1,10 +1,8 @@
 # Born2beroot
-+ Born2beroot is a project that aims to teach us about `virtualization` and system administration by setting up a server and configuring its security for the mandatory part and for the bonus part you'll try to host a site
-=======================================================================
++ Born2beroot is a project that aims to teach us about `virtualization` and system administration by setting up a server and configuring its security for the mandatory part and for the bonus part you'll try to host a site.
 -----------------------------------------------------------------------
 # Virtuallization
     ttttttt
-======================================================================
 ----------------------------------------------------------------------
 # Monitoring Script
     #!/bin/bash
