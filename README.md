@@ -47,5 +47,9 @@
 	User log: $logs
 	Network: IP $ip ($mac)
 	Sudo: $cmnd cmd "
+    ---------------------------------------------------------------------
+    + uname -a : used to display system information -a: Shows all available information about the system.
+    + grep -c "physical id" /proc/cpuinfo : counts the number of times the term "physical id" appears in the file /proc/cpuinfo.
+    + grep -c "processor" /proc/cpuinfo : counts the number of logical processors (CPU cores) in the system by searching for the keyword "processor" in the file /proc/cpuinfo.
 
 =====================================================================
