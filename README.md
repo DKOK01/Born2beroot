@@ -1,5 +1,5 @@
 # Born2beroot
-##### Born2beroot is a project that aims to teach us about `virtualization` and system administration by setting up a server and configuring its security for the mandatory part and for the bonus part you'll try to host a site
++ Born2beroot is a project that aims to teach us about `virtualization` and system administration by setting up a server and configuring its security for the mandatory part and for the bonus part you'll try to host a site
 =======================================================================
 -----------------------------------------------------------------------
 # Virtuallization
@@ -51,7 +51,7 @@
 	Network: IP $ip ($mac)
 	Sudo: $cmnd cmd "
 ---------------------------------------------------------------------
-#### uname -a  : used to display system information -a: Shows all available information about the system.
++ uname -a  : used to display system information -a: Shows all available information about the system.
 ----------------------------------------------------------------------
 + grep -c "physical id" /proc/cpuinfo : counts the number of times the term "physical id" appears in the file /proc/cpuinfo.
 -------------------------------------------------------------------------
