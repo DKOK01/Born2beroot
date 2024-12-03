@@ -49,16 +49,18 @@
 	Network: IP $ip ($mac)
 	Sudo: $cmnd cmd "
 ---------------------------------------------------------------------
-+ uname -a  : used to display system information -a: Shows all available information about the system.
++ `uname -a`  : used to display system information -a: Shows all available information about the system.
 ----------------------------------------------------------------------
-+ grep -c "physical id" /proc/cpuinfo : counts the number of times the term "physical id" appears in the file /proc/cpuinfo.
++ `grep -c "physical id" /proc/cpuinfo` : counts the number of times the term "physical id" appears in the file /proc/cpuinfo.
 -------------------------------------------------------------------------
-+ grep -c "processor" /proc/cpuinfo : counts the number of logical processors (CPU cores) in the system by searching for the keyword "processor" in the file /proc/cpuinfo.
++ `grep -c "processor" /proc/cpuinfo` : counts the number of logical processors (CPU cores) in the system by searching for the keyword "processor" in the file /proc/cpuinfo.
 -------------------------------------------------------------------------
-+ free -m | awk '/^Mem:/ {print $2}' : extracts and displays the total amount of physical memory (RAM) in megabytes (MB) from the free command's output.
-    
-    +
-
-
-
++ `free -m | awk '/^Mem:/ {print $2}'` : extracts and displays the total amount of physical memory (RAM) in megabytes (MB) from the free command's output.
++ `free -m | awk '/^Mem:/ {print $3}'` extracts and displays the amount of memory currently in use (in megabytes, MB) from the output of the free command.
++ `free -m | awk '/^Mem:/ {printf "%.2f", $3/$2*100}'` : calculates and displays the percentage of used memory on your system, based on the free command's output.
+-------------------------------------------------------------------------
++ `df -m | grep "/dev/" | grep -v "/boot" | awk '{disk_t += $2} END {printf "%dGb\n", disk_t/1024}'` : calculates and displays the total disk size in gigabytes (GB) of all mounted filesystems located under /dev/, excluding the /boot partition.
++ `df -m | grep "/dev/" | grep -v "/boot" | awk '{disk_u += $3} END {print disk_u}'` : calculates and displays the total used disk space (in megabytes, MB) of all mounted filesystems under /dev/, excluding the /boot partition.
++ `df -m | grep "/dev/" | grep -v "/boot" | awk '{disk_u += $3} {disk_t += $2} END {printf "%d", disk_u/disk_t*100}'` : calculates the percentage of used disk space across all mounted filesystems under /dev/, excluding the /boot partition.
+-------------------------------------------------------------------------
 =====================================================================
