@@ -49,8 +49,8 @@
 	Network: IP $ip ($mac)
 	Sudo: $cmnd cmd "
 ---------------------------------------------------------------------
-#### the explanation :
----------------------------------------------------------------------
+##### the explanation :
+
 + `uname -a`  : used to display system information -a: Shows all available information about the system.
 ----------------------------------------------------------------------
 + `grep -c "physical id" /proc/cpuinfo` : counts the number of times the term "physical id" appears in the file /proc/cpuinfo.
