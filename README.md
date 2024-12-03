@@ -49,7 +49,7 @@
 	Network: IP $ip ($mac)
 	Sudo: $cmnd cmd "
 ---------------------------------------------------------------------
-##### the explanation :
+#### the explanation :
 
 + `uname -a`  : used to display system information -a: Shows all available information about the system.
 ----------------------------------------------------------------------
@@ -71,5 +71,12 @@
 ------------------------------------------------------------------------ 
 + `if [ $(lsblk | grep "lvm" | wc -l) -gt 0 ]; then echo yes; else echo no; fi` : checks if there are any LVM (Logical Volume Manager) partitions on the system. If LVM partitions exist, it outputs yes; otherwise, it outputs no.
 ------------------------------------------------------------------------ 
-+ 
-=====================================================================
++ `ss -ta | grep ESTAB | wc -l` : counts the number of active TCP connections in the "ESTABLISHED" state on the system.
+------------------------------------------------------------------------ 
++ `users | wc -w` : counts the number of logged-in users currently on the system.
+------------------------------------------------------------------------ 
++ `hostname -I` : displays the IP addresses assigned to the host's network interfaces.
++ `ip addr | grep "link/ether" | awk '{print $2}'` : ip addr | grep "link/ether" | awk '{print $2}' extracts and displays the MAC addresses of all active network interfaces on your system.
+------------------------------------------------------------------------ 
++ `journalctl _COMM=sudo | grep -c COMMAND ` : is used to count the number of times the sudo command has been executed on the system.
+------------------------------------------------------------------------ 
