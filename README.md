@@ -80,3 +80,7 @@
 ------------------------------------------------------------------------ 
 + `journalctl _COMM=sudo | grep -c COMMAND ` : is used to count the number of times the sudo command has been executed on the system.
 ------------------------------------------------------------------------ 
++ `wall` : The wall command in Linux is used to broadcast messages to all logged-in users on the system. This can be helpful for administrators to send important announcements, warnings, or maintenance notices.
+------------------------------------------------------------------------ 
+
+
