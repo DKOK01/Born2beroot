@@ -5,6 +5,25 @@
     ttttttt
 ----------------------------------------------------------------------
 ## Monitoring Script
++ The `monitoring.sh` script is a core part of your project. It will display essential system information in a clear format, including CPU usage, memory, disk usage, active users, and more. Below are detailed steps to write, configure, and test the script.
+----------------------------------------------------------------------
+### Step 1: Understand What the Script Needs to Display
++ The script should display the following information:
+
+ + System Architecture and Kernel Version
+Physical CPU count
+Virtual CPUs count
+Memory Usage
+Disk Usage
+CPU Load
+Last Reboot Time
+Number of Logged-in Users
+Network Information (IP and MAC addresses)
+Number of Processes
+LVM (Logical Volume Management) Information
+Firewall Status
+Each of these will be implemented using Linux commands.
+----------------------------------------------------------------------
     #!/bin/bash
 
     info=$(uname -a)
