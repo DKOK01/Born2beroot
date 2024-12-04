@@ -10,19 +10,19 @@
 ### Step 1: Understand What the Script Needs to Display
 + The script should display the following information:
 
- + System Architecture and Kernel Version
- + Physical CPU count
- + Virtual CPUs count
- + Memory Usage
- + Disk Usage
- + CPU Load
- + Last Reboot Time
- + Number of Logged-in Users
- + Network Information (IP and MAC addresses)
- + Number of Processes
- + LVM (Logical Volume Management) Information
- + Firewall Status
- + Each of these will be implemented using Linux commands.
+  + System Architecture and Kernel Version
+  + Physical CPU count
+  + Virtual CPUs count
+  + Memory Usage
+  + Disk Usage
+  + CPU Load
+  + Last Reboot Time
+  + Number of Logged-in Users
+  + Network Information (IP and MAC addresses)
+  + Number of Processes
+  + LVM (Logical Volume Management) Information
+  + Firewall Status
+  + Each of these will be implemented using Linux commands.
 ----------------------------------------------------------------------
     #!/bin/bash
 
