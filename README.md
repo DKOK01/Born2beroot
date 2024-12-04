@@ -10,7 +10,7 @@
 ### Step 1: Understand What the Script Needs to Display
 + The script should display the following information:
 
- + System Architecture and Kernel Version
+System Architecture and Kernel Version
 Physical CPU count
 Virtual CPUs count
 Memory Usage
