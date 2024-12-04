@@ -25,8 +25,10 @@
   + Each of these will be implemented using Linux commands.
 ----------------------------------------------------------------------
 ### Step 2: Create and Edit the Script
-+ Create the file:/
-	sudo nano /usr/local/bin/monitoring.sh
++ Create the file:
+```
+sudo nano /usr/local/bin/monitoring.sh
+```
 + This will create the script file and open it in the nano editor.
 ----------------------------------------------------------------------
     #!/bin/bash
