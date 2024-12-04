@@ -110,6 +110,25 @@ sudo nano /usr/local/bin/monitoring.sh
   + `journalctl _COMM=sudo | grep -c COMMAND ` : is used to count the number of times the sudo command has been executed on the system.
   ------------------------------------------------------------------------ 
   + `wall` : The wall command in Linux is used to broadcast messages to all logged-in users on the system. This can be helpful for administrators to send important announcements, warnings, or maintenance notices.
-  ------------------------------------------------------------------------ 
+  ------------------------------------------------------------------------
+### Step 3: Make the Script Executable
++ After saving the script, make it executable:
+```
+sudo chmod +x /usr/local/bin/monitoring.sh
+```
+------------------------------------------------------------------------
+### Step 4: Automate the Script Execution
++ Schedule the Script with Cron:
+  + Open the crontab editor:
+  ```
+  sudo crontab -e
+  ```
++ Add the following line to execute the script every 10 minutes:
+```
+*/10 * * * * /usr/local/bin/monitoring.sh > /var/log/monitoring.log
+```
++ This will run the script and save the output to /var/log/monitoring.log.
+------------------------------------------------------------------------
+------------------------------------------------------------------------
 
 
