@@ -31,6 +31,8 @@ sudo nano /usr/local/bin/monitoring.sh
 ```
 + This will create the script file and open it in the nano editor.
 ----------------------------------------------------------------------
++ Write the Script:
+```
     #!/bin/bash
 
     info=$(uname -a)
@@ -74,10 +76,11 @@ sudo nano /usr/local/bin/monitoring.sh
 	User log: $logs
 	Network: IP $ip ($mac)
 	Sudo: $cmnd cmd "
+```
 ---------------------------------------------------------------------
-#### the explanation :
++ the explanation :
 
-+ `uname -a`  : used to display system information -a: Shows all available information about the system.
+  + `uname -a`  : used to display system information -a: Shows all available information about the system.
 ----------------------------------------------------------------------
 + `grep -c "physical id" /proc/cpuinfo` : counts the number of times the term "physical id" appears in the file /proc/cpuinfo.
 -------------------------------------------------------------------------
