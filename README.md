@@ -30,6 +30,7 @@
 sudo nano /usr/local/bin/monitoring.sh
 ```
 + This will create the script file and open it in the nano editor.
++ We use this path `/usr/local/bin/` : BCS Allows you to run the script by simply typing its name (e.g., monitoring.sh) without specifying the full path.
 ----------------------------------------------------------------------
 + Write the Script:
 ```
@@ -120,15 +121,16 @@ sudo chmod +x /usr/local/bin/monitoring.sh
 ### Step 4: Automate the Script Execution
 + Schedule the Script with Cron:
   + Open the crontab editor:
-  ```
-  sudo crontab -e
-  ```
-+ Add the following line to execute the script every 10 minutes:
-```
-*/10 * * * * /usr/local/bin/monitoring.sh > /var/log/monitoring.log
-```
-+ This will run the script and save the output to /var/log/monitoring.log.
+	```
+	sudo crontab -e
+	```
+  + Add the following line to execute the script every 10 minutes:
+	```
+	*/10 * * * * /usr/local/bin/monitoring.sh 
+	```
 ------------------------------------------------------------------------
++ crontab : is a configuration file used in Linux to schedule automated tasks, commonly referred to as "cron jobs." These tasks can run at specific times or intervals without manual intervention.
++ Each line in the crontab file follows this format: `minute hour day month weekday <command>`
 ------------------------------------------------------------------------
 
 
