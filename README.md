@@ -134,6 +134,6 @@ sudo chmod +x /usr/local/bin/monitoring.sh
 ------------------------------------------------------------------------
 ## BUNUS
 + Prometheus service :
-	+ What is Prometheus?
-		Prometheus is an open-source monitoring and alerting tool designed for collecting, storing, and analyzing metrics from systems, applications, and services.
+	+ What is Prometheus? :
+ 		+ Prometheus is an open-source monitoring and alerting tool designed for collecting, storing, and analyzing metrics from systems, applications, and services.
 
