@@ -136,4 +136,19 @@ sudo chmod +x /usr/local/bin/monitoring.sh
 + Prometheus service :
 	+ What is Prometheus? :
  		+ Prometheus is an open-source monitoring and alerting tool designed for collecting, storing, and analyzing metrics from systems, applications, and services.
-
+	+ Why Do We Use It? :
+		+ Monitor System Performance: It helps track CPU usage, memory, disk, and other system metrics.
+		+ Alerting: It sends alerts when something goes wrong (e.g., high CPU usage).
+		+ Scalability: Works well with dynamic systems like VMs or containerized apps.
+		+ Ease of Use: It is lightweight and easy to integrate with modern tools.
+	+ How Does It Work? :
+		+ Data Collection: Prometheus uses exporters (small programs) to collect metrics from servers or applications.
+		+ Example: node_exporter collects system-level metrics.
+		+ Storage: Prometheus stores metrics in a time-series database (metrics over time).
+		+ Querying: Metrics are analyzed using a query language called PromQL.
+	  	+ Alerts: Alerts are triggered based on specific conditions you define in rules.
+	+ Why Is It Useful? :
+		+ Proactive Monitoring: Quickly spot issues before they become big problems.
+		+ Detailed Insights: See trends over time (e.g., performance spikes).
+		+ Automation: Alerts help automate responses to failures or anomalies.
+	+ In short, Prometheus is great for keeping your systems healthy, tracking performance, and reacting to problems faster.
