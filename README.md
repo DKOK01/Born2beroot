@@ -132,5 +132,8 @@ sudo chmod +x /usr/local/bin/monitoring.sh
 + crontab : is a configuration file used in Linux to schedule automated tasks, commonly referred to as "cron jobs." These tasks can run at specific times or intervals without manual intervention.
 + Each line in the crontab file follows this format: `minute hour day month weekday <command>`
 ------------------------------------------------------------------------
-
+## BUNUS
++ Prometheus service :
+	+ What is Prometheus?
+		Prometheus is an open-source monitoring and alerting tool designed for collecting, storing, and analyzing metrics from systems, applications, and services.
 
