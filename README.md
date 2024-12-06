@@ -200,6 +200,9 @@
 
 ## IV . SUDO
 
++ 1. What is SUDO?
+	+ sudo (short for "superuser do") is a command in Linux that allows a user to run programs or execute commands with administrator (superuser/root) privileges.
+	+ It is a way to temporarily gain more power to perform tasks that require special permissions.	 
 
 
 
