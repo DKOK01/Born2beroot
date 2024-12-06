@@ -73,7 +73,7 @@
 	-----------------------------------------------------------------------
 
 + 2 . How Does LVM Work?
-		+ Think of it like a pool of storage:
+		+ Think of it like a pool of storage.
 		+ You combine one or more physical disks into a pool.
 		+ You create logical volumes (similar to partitions) from the pool.
 		+ You can easily resize or manage these volumes as your needs change
