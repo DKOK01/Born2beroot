@@ -3,20 +3,20 @@
 -----------------------------------------------------------------------
 + (https://youtu.be/73r3JbkCVy0?si=A68GjkJJofwhX0f0)
 -----------------------------------------------------------------------
-## Virtuallization
+## .1 Virtuallization
 + 1. What is a **Virtual Machine** (VM)?
 	+ A virtual machine is a computer inside another computer.
 	+ It runs its own operating system (e.g., Linux) but uses the hardware (CPU, RAM, storage) of the main machine (called the host).
 	+ Example: Your main computer runs Windows, but you install a VM to run Linux without affecting your main system.
 
 	-----------------------------------------------------------------------
-+ 2. How Does **Virtualization** Work?
++ 2- How Does **Virtualization** Work?
 	+ **Virtualization** allows you to split your physical computer into multiple virtual computers (VMs).
 	+ A software called a **hypervisor** manages the VMs and shares the host’s hardware between them.
 	+ Each VM behaves like a real computer with its own OS and applications.
 
 	-----------------------------------------------------------------------
-+ 3. Advantages of a **Virtual Machine**
++ 3- Advantages of a **Virtual Machine**
 	+ Isolation: VMs are separate, so problems in one VM don’t affect the host or other VMs.
 	+ Testing: Safe for experimenting with new systems or software.
 	+ Cost-Efficient: No need for multiple physical machines.
@@ -24,7 +24,7 @@
 	+ Efficient Use of Resources: Share your computer's hardware among multiple VMs.
 
 	-----------------------------------------------------------------------
-+ 4. Types of **Hypervisors**
++ 4- Types of **Hypervisors**
 	+ A hypervisor is the software that creates and manages VMs.
 
 	+ Type 1 (Bare-Metal):
@@ -37,7 +37,7 @@
 		+ Example: VirtualBox, VMware Workstation.
 
 	-----------------------------------------------------------------------
-+ 5. What is **System Administration**?
++ 5- What is **System Administration**?
 	+ System Administration involves managing and maintaining computer systems and networks.
 	+ Tasks include:
 		+ Installing and updating software.
