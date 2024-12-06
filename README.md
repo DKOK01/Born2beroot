@@ -1,6 +1,8 @@
 # Born2beroot
 + Born2beroot is a project that aims to teach us about **virtualization** and **system administration** by setting up a **server** and configuring its security for the mandatory part and for the bonus part you'll try to host a site.
 -----------------------------------------------------------------------
+### Install your virtual machine
++ for Debian and if you want to do the bonus part :
 + (https://youtu.be/73r3JbkCVy0?si=A68GjkJJofwhX0f0)
 -----------------------------------------------------------------------
 ## I . Virtuallization
