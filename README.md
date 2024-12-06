@@ -17,7 +17,7 @@
 	+ A software called a **hypervisor** manages the VMs and shares the host’s hardware between them.
 	+ Each VM behaves like a real computer with its own OS and applications.
  
-	+ ![image](https://github.com/user-attachments/assets/f3c14b18-05d2-4ba3-aea3-d918871d6533)
+	![image](https://github.com/user-attachments/assets/f3c14b18-05d2-4ba3-aea3-d918871d6533)
 
 	-----------------------------------------------------------------------
 + 3 . Advantages of a **Virtual Machine**
@@ -40,7 +40,9 @@
 		+ Easier to set up on personal computers.
 		+ Example: VirtualBox, VMware Workstation.
 
-	+ ![image](https://github.com/user-attachments/assets/89511cb8-7ad7-4fc5-8796-26e3df8ddccc)
+	<p align="center">
+  <img src="https://www.interviewbit.com/blog/wp-content/uploads/2022/05/Hypervisors-1024x955.png" style="width:500px">
+	</p>
 
 	-----------------------------------------------------------------------
 + 5 . What is **System Administration**?
