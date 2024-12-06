@@ -119,67 +119,67 @@
 ----------------------------------------------------------------------
 ## III . Linux File System 
 
-+ 1. What is a File System in Linux?
++ 1 . What is a File System in Linux?
 	+ A file system is how Linux organizes and stores data on storage devices (like a hard drive or SSD).
 	+ It manages files (data) and directories (folders) and controls how data is written, read, and accessed.
 	+ Example: When you save a file, the file system determines where on the disk the data is stored.
 	----------------------------------------------------------------------
-+ 2. Types of File Systems in Linux
++ 2 . Types of File Systems in Linux
 	+ Some common types of file systems:
 
-	+ ext4 (Fourth Extended File System):
+	+ **ext4** (Fourth Extended File System):
 	The most commonly used file system in Linux.
 	Reliable and fast, supports large files and drives.
-	+ ext3 (Third Extended File System):
+	+ **ext3** (Third Extended File System):
 	An older version of ext4, slower but still used sometimes.
-	+ xfs:
+	+ **xfs**:
 	Great for handling very large files and fast performance.
-	+ btrfs (B-tree File System):
+	+ **btrfs** (B-tree File System):
 	Advanced features like snapshots and better error handling.
-	+ FAT32/NTFS:
+	+ **FAT32/NTFS**:
 	Used by Windows; Linux can read/write these file systems for compatibility.
-	+ Swap:
+	+ **Swap**:
 	Special file system used for virtual memory (to extend RAM).
 	----------------------------------------------------------------------
-+ 3. Purpose of a File System
++ 3 . Purpose of a File System
 	+ Why do we need a file system?
 
-	+ Organization: Keeps files and directories in a structured way so you can find them.
-	+ Efficiency: Stores data efficiently on a disk.
-	+ Access Control: Manages who can read, write, or execute files (permissions).
-	+ Error Management: Ensures the integrity of data in case of crashes.
+	+ **Organization**: Keeps files and directories in a structured way so you can find them.
+	+ **Efficiency**: Stores data efficiently on a disk.
+	+ **Access Control**: Manages who can read, write, or execute files (permissions).
+	+ **Error Management**: Ensures the integrity of data in case of crashes.
 	----------------------------------------------------------------------
-+ 4. What is the Directory Structure in Linux?
++ 4 . What is the Directory Structure in Linux?
 	+ Linux uses a hierarchical directory structure (tree-like form). The root directory (/) is at the top.
 	+ Key Directories:
 
-	+ / (Root):
+	+ `/ (Root)`:
 		+ The starting point of the Linux file system. Everything is inside /.
 
-	+ /home:
+	+ `/home`:
 		+ Stores personal files for users.
 		+ Example: Your desktop files are in /home/username.
 
-	+ /etc:
+	+ `/etc`:
 		+ Configuration files for the system and applications.
 
-	+ /bin and /sbin:
+	+ `/bin` and `/sbin`:
 		+ /bin: Contains essential commands for all users (e.g., ls, cp).
 		+ /sbin: Commands for system administrators (e.g., ifconfig).
 
-	+ /var:
+	+ `/var`:
 		+ Stores logs and variable data (e.g., website data or system logs).
 
-	+ /tmp:
+	+ `/tmp`:
 		+ Temporary files created by programs.
 
-	+ /usr:
+	+ `/usr`:
 		+ Contains software and applications.
 
-	+ /dev:
+	+ `/dev`:
 		+ Represents hardware devices as files (e.g., hard drives).
 
-	+ /mnt or /media:
+	+ `/mnt` or `/media`:
 		+ Temporary mount points for storage devices like USBs or CDs.
 
 **=========================================================================================================**
