@@ -135,7 +135,7 @@ sudo chmod +x /usr/local/bin/monitoring.sh
 + crontab : is a configuration file used in Linux to schedule automated tasks, commonly referred to as "cron jobs." These tasks can run at specific times or intervals without manual intervention.
 + Each line in the crontab file follows this format: `minute hour day month weekday <command>`
 ------------------------------------------------------------------------
-## BUNUS
+## BONUS
 ### what is WordPress, what is lighttpd, what is PHP, what is MariaDB, ow do they work together :
 + 1. What is WordPress?
 	+ WordPress is a tool for creating websites and blogs.
