@@ -96,6 +96,9 @@
 		Created from the volume group.
 		These are the "usable partitions" where you can store files.
 		Example: /home, /var, or /mnt/data.
+
+		![image](https://github.com/user-attachments/assets/9a1b6449-ddf7-4d9f-8649-512767851107)
+
 	-----------------------------------------------------------------------
 
 + 4 . Why Do We Use LVM?
