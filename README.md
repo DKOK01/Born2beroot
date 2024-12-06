@@ -56,19 +56,23 @@
 	+ Example: A system administrator (sysadmin) ensures a company’s servers run smoothly.
 
 ----------------------------------------------------------------------
-## II. LVM
+## II . LVM
 
 + 1 . What is LVM (Logical Volume Manager)?
 		+ LVM is a tool to manage storage on Linux more flexibly than traditional partitions.
 		+ It allows you to resize, add, or combine storage space without restarting the system.
 		+ Instead of using fixed partitions, LVM lets you group disks together and divide the space into "logical volumes."
+  
 	-----------------------------------------------------------------------
+
 + 2 . How Does LVM Work?
 		+ Think of it like a pool of storage:
 		+ You combine one or more physical disks into a pool.
 		+ You create logical volumes (similar to partitions) from the pool.
-		+ You can easily resize or manage these volumes as your needs change.
+		+ You can easily resize or manage these volumes as your needs change
+  
 	-----------------------------------------------------------------------
+
 + 3 . What Are the Components of LVM?
 	+ LVM has three main components:
 
@@ -86,24 +90,22 @@
 		These are the "usable partitions" where you can store files.
 		Example: /home, /var, or /mnt/data.
 	-----------------------------------------------------------------------
-4 . Why Do We Use LVM?
+
++ 4 . Why Do We Use LVM?
 	+ Flexibility: You can resize volumes (increase or reduce storage) as needed.
 	+ Snapshots: You can create backups (snapshots) without stopping the system.
 	+ Better Disk Usage: Combine multiple small disks into one large storage pool.
 	+ Easier Management: Add more storage to the system without complex re-partitioning.
-	-----------------------------------------------------------------------
-5 . What Are Partitions?
+ 
+ 	-----------------------------------------------------------------------
+
++ 5 . What Are Partitions?
 	+ A partition is a way to divide a hard drive into separate sections.
 	+ Each partition acts as an independent storage space.
 	+ Example:
 		+ One partition for the operating system (e.g., /).
 		+ One partition for user data (e.g., /home).
-
-
-
-
-
-
+  
 ----------------------------------------------------------------------
 ## Monitoring Script
 + The `monitoring.sh` script is a core part of your project. It will display essential system information in a clear format, including CPU usage, memory, disk usage, active users, and more. Below are detailed steps to write, configure, and test the script.
