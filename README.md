@@ -117,9 +117,9 @@ sudo nano /usr/local/bin/monitoring.sh
   ------------------------------------------------------------------------
 ### Step 3: Make the Script Executable
 + After saving the script, make it executable:
-```
-sudo chmod +x /usr/local/bin/monitoring.sh
-```
+	```
+	sudo chmod +x /usr/local/bin/monitoring.sh
+	```
 ------------------------------------------------------------------------
 ### Step 4: Automate the Script Execution
 + Schedule the Script with Cron:
@@ -131,7 +131,7 @@ sudo chmod +x /usr/local/bin/monitoring.sh
 	```
 	*/10 * * * * /usr/local/bin/monitoring.sh 
 	```
-------------------------------------------------------------------------
+	------------------------------------------------------------------------
 + crontab : is a configuration file used in Linux to schedule automated tasks, commonly referred to as "cron jobs." These tasks can run at specific times or intervals without manual intervention.
 + Each line in the crontab file follows this format: `minute hour day month weekday <command>`
 ------------------------------------------------------------------------
