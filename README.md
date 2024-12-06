@@ -131,15 +131,15 @@
 	The most commonly used file system in Linux.
 	Reliable and fast, supports large files and drives.
 	+ **ext3** (Third Extended File System):
-	An older version of ext4, slower but still used sometimes.
+		An older version of ext4, slower but still used sometimes.
 	+ **xfs**:
-	Great for handling very large files and fast performance.
+		Great for handling very large files and fast performance.
 	+ **btrfs** (B-tree File System):
-	Advanced features like snapshots and better error handling.
+		Advanced features like snapshots and better error handling.
 	+ **FAT32/NTFS**:
-	Used by Windows; Linux can read/write these file systems for compatibility.
+		Used by Windows; Linux can read/write these file systems for compatibility.
 	+ **Swap**:
-	Special file system used for virtual memory (to extend RAM).
+		Special file system used for virtual memory (to extend RAM).
 	----------------------------------------------------------------------
 + 3 . Purpose of a File System
 	+ Why do we need a file system?
