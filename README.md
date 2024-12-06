@@ -1,11 +1,16 @@
 # Born2beroot
+
 + Born2beroot is a project that aims to teach us about **virtualization** and **system administration** by setting up a **server** and configuring its security for the mandatory part and for the bonus part you'll try to host a site.
+
 -----------------------------------------------------------------------
+
 ### Install your virtual machine
 + for Debian and if you want to do the bonus part :
 + (https://youtu.be/73r3JbkCVy0?si=A68GjkJJofwhX0f0)
+
 -----------------------------------------------------------------------
 **=========================================================================================================**
+
 ## I . Virtuallization
 
 + 1 . What is a **Virtual Machine** (VM)?
@@ -63,6 +68,7 @@
 
 ----------------------------------------------------------------------
 **=========================================================================================================**
+
 ## II . LVM
 
 + 1 . What is LVM (Logical Volume Manager)?
@@ -117,6 +123,8 @@
 		+ One partition for user data (e.g., /home).
   
 ----------------------------------------------------------------------
+**=========================================================================================================**
+
 ## III . Linux File System 
 
 + 1 . What is a File System in Linux?
@@ -124,6 +132,7 @@
 	+ It manages files (data) and directories (folders) and controls how data is written, read, and accessed.
 	+ Example: When you save a file, the file system determines where on the disk the data is stored.
 	----------------------------------------------------------------------
+  
 + 2 . Types of File Systems in Linux
 	+ Some common types of file systems:
 
@@ -140,7 +149,9 @@
 		Used by Windows; Linux can read/write these file systems for compatibility.
 	+ **Swap**:
 		Special file system used for virtual memory (to extend RAM).
+
 	----------------------------------------------------------------------
+  
 + 3 . Purpose of a File System
 	+ Why do we need a file system?
 
@@ -148,7 +159,9 @@
 	+ **Efficiency**: Stores data efficiently on a disk.
 	+ **Access Control**: Manages who can read, write, or execute files (permissions).
 	+ **Error Management**: Ensures the integrity of data in case of crashes.
+
 	----------------------------------------------------------------------
+  
 + 4 . What is the Directory Structure in Linux?
 	+ Linux uses a hierarchical directory structure (tree-like form). The root directory (/) is at the top.
 	+ Key Directories:
@@ -181,6 +194,18 @@
 
 	+ `/mnt` or `/media`:
 		+ Temporary mount points for storage devices like USBs or CDs.
+
+----------------------------------------------------------------------
+**=========================================================================================================**
+
+## IV . SUDO
+
+
+
+
+
+
+
 
 **=========================================================================================================**
 ## Monitoring Script
@@ -314,32 +339,44 @@ sudo nano /usr/local/bin/monitoring.sh
 	*/10 * * * * /usr/local/bin/monitoring.sh 
 	```
 	------------------------------------------------------------------------
+
 + crontab : is a configuration file used in Linux to schedule automated tasks, commonly referred to as "cron jobs." These tasks can run at specific times or intervals without manual intervention.
 + Each line in the crontab file follows this format: `minute hour day month weekday <command>`
+
 ------------------------------------------------------------------------
 **=========================================================================================================**
 ## BONUS
+
 ### what is WordPress, what is lighttpd, what is PHP, what is MariaDB, ow do they work together :
+
 + 1. What is WordPress?
 	+ WordPress is a tool for creating websites and blogs.
 	+ It’s user-friendly and doesn’t require coding knowledge.
 	+ Example: You can use WordPress to create a blog, portfolio, or even an online store.
+
 	------------------------------------------------------------------------
+
 + 2. What is lighttpd?
 	+ lighttpd is a web server.
 	+ It delivers your website (e.g., WordPress) to users’ browsers when they visit your site.
 	+ Think of it as the “waiter” that brings the website (stored on your VM) to people online.
+
 	------------------------------------------------------------------------
+
 + 3. What is PHP?
 	+ PHP is a programming language that runs on the server.
 	+ WordPress uses PHP to process requests like creating posts or loading pages dynamically.
 	+ Example: If someone visits your WordPress blog, PHP generates the page they see.
+
 	------------------------------------------------------------------------
+
 + 4. What is MariaDB?
 	+ MariaDB is a database system that stores your website data.
 	+ It keeps everything like blog posts, user accounts, and comments organized.
 	+ WordPress retrieves data from MariaDB when needed (e.g., when displaying a blog post).
+
 	------------------------------------------------------------------------
+
 + 5. How Do They Work Together?
 	When someone visits your WordPress site:
 
@@ -353,32 +390,44 @@ sudo nano /usr/local/bin/monitoring.sh
 		+ lighttpd: The delivery service.
 		+ PHP: The chef preparing the website.
 		+ MariaDB: The storage room with all the ingredients (data).
+
 ------------------------------------------------------------------------
+
 ### Prometheus service :
 + What is Prometheus? :
  	+ Prometheus is an open-source monitoring and alerting tool designed for collecting, storing, and analyzing metrics from systems, applications, and services.
+
 	------------------------------------------------------------------------
+
 + Why Do We Use It? :
 	+ `Monitor System Performance`: It helps track CPU usage, memory, disk, and other system metrics.
 	+ `Alerting`: It sends alerts when something goes wrong (e.g., high CPU usage).
 	+ `Scalability`: Works well with dynamic systems like VMs or containerized apps.
 	+ `Ease of Use`: It is lightweight and easy to integrate with modern tools.
+
 	------------------------------------------------------------------------
+
 + How Does It Work? :
 	+ `Data Collection`: Prometheus uses exporters (small programs) to collect metrics from servers or applications.
 	+ `Example`: node_exporter collects system-level metrics.
 	+ `Storage`: Prometheus stores metrics in a time-series database (metrics over time).
 	+ `Querying`: Metrics are analyzed using a query language called PromQL.
 	+ `Alerts`: Alerts are triggered based on specific conditions you define in rules.
+
 	------------------------------------------------------------------------
+
 + Why Is It Useful? :
 	+ `Proactive Monitoring`: Quickly spot issues before they become big problems.
 	+ `Detailed Insights`: See trends over time (e.g., performance spikes).
 	+ `Automation`: Alerts help automate responses to failures or anomalies.
+
 	------------------------------------------------------------------------
+
 + In short, Prometheus is great for keeping your systems healthy, tracking performance, and reacting to problems faster.
+
 ------------------------------------------------------------------------
 **=========================================================================================================**
+
 ## III - Sources
 + (https://github.com/42-adbouras/Born2beroot-1337MED/tree/master)
 + (https://github.com/RIDWANE-EL-FILALI/Born2beroot/blob/master/Configuration.md)
