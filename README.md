@@ -5,7 +5,7 @@
 + for Debian and if you want to do the bonus part :
 + (https://youtu.be/73r3JbkCVy0?si=A68GjkJJofwhX0f0)
 -----------------------------------------------------------------------
-**=======================================================================**
+**========================================================================================================================**
 ## I . Virtuallization
 + 1 . What is a **Virtual Machine** (VM)?
 	+ A virtual machine is a computer inside another computer.
