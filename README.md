@@ -16,6 +16,7 @@
 	+ **Virtualization** allows you to split your physical computer into multiple virtual computers (VMs).
 	+ A software called a **hypervisor** manages the VMs and shares the host’s hardware between them.
 	+ Each VM behaves like a real computer with its own OS and applications.
+	![image](https://github.com/user-attachments/assets/f3c14b18-05d2-4ba3-aea3-d918871d6533)
 
 	-----------------------------------------------------------------------
 + 3 . Advantages of a **Virtual Machine**
@@ -238,7 +239,7 @@ sudo nano /usr/local/bin/monitoring.sh
 	------------------------------------------------------------------------
 + In short, Prometheus is great for keeping your systems healthy, tracking performance, and reacting to problems faster.
 ------------------------------------------------------------------------
-III - Sources
+## III - Sources
 + (https://github.com/42-adbouras/Born2beroot-1337MED/tree/master)
 + (https://github.com/RIDWANE-EL-FILALI/Born2beroot/blob/master/Configuration.md)
 + (https://42-cursus.gitbook.io/guide/rank-01/born2beroot/whats-a-virtual-machine)
