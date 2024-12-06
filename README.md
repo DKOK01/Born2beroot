@@ -19,7 +19,9 @@
 	+ Each VM behaves like a real computer with its own OS and applications.
  
 	![image](https://github.com/user-attachments/assets/f3c14b18-05d2-4ba3-aea3-d918871d6533)
-
+		<p align="center">
+  <img src="(https://github.com/user-attachments/assets/f3c14b18-05d2-4ba3-aea3-d918871d6533)" style="width:500px">
+	</p>
 	-----------------------------------------------------------------------
 + 3 . Advantages of a **Virtual Machine**
 	+ Isolation: VMs are separate, so problems in one VM don’t affect the host or other VMs.
