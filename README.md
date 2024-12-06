@@ -3,7 +3,7 @@
 -----------------------------------------------------------------------
 + (https://youtu.be/73r3JbkCVy0?si=A68GjkJJofwhX0f0)
 -----------------------------------------------------------------------
-## 1 . Virtuallization
+## I. Virtuallization
 + 1_ What is a **Virtual Machine** (VM)?
 	+ A virtual machine is a computer inside another computer.
 	+ It runs its own operating system (e.g., Linux) but uses the hardware (CPU, RAM, storage) of the main machine (called the host).
