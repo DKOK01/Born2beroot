@@ -237,3 +237,9 @@ sudo nano /usr/local/bin/monitoring.sh
 	+ `Automation`: Alerts help automate responses to failures or anomalies.
 	------------------------------------------------------------------------
 + In short, Prometheus is great for keeping your systems healthy, tracking performance, and reacting to problems faster.
+------------------------------------------------------------------------
+III - Sources
++ (https://github.com/42-adbouras/Born2beroot-1337MED/tree/master)
++ (https://github.com/RIDWANE-EL-FILALI/Born2beroot/blob/master/Configuration.md)
++ (https://42-cursus.gitbook.io/guide/rank-01/born2beroot/whats-a-virtual-machine)
++ ChatGPT, Youtube, Google, trust me broo.
