@@ -57,6 +57,7 @@
 	+ Example: A system administrator (sysadmin) ensures a company’s servers run smoothly.
 
 ----------------------------------------------------------------------
+**=========================================================================================================**
 ## II . LVM
 
 + 1 . What is LVM (Logical Volume Manager)?
@@ -108,6 +109,7 @@
 		+ One partition for user data (e.g., /home).
   
 ----------------------------------------------------------------------
+**=========================================================================================================**
 ## Monitoring Script
 + The `monitoring.sh` script is a core part of your project. It will display essential system information in a clear format, including CPU usage, memory, disk usage, active users, and more. Below are detailed steps to write, configure, and test the script.
 ----------------------------------------------------------------------
@@ -236,6 +238,7 @@ sudo nano /usr/local/bin/monitoring.sh
 + crontab : is a configuration file used in Linux to schedule automated tasks, commonly referred to as "cron jobs." These tasks can run at specific times or intervals without manual intervention.
 + Each line in the crontab file follows this format: `minute hour day month weekday <command>`
 ------------------------------------------------------------------------
+**=========================================================================================================**
 ## BONUS
 ### what is WordPress, what is lighttpd, what is PHP, what is MariaDB, ow do they work together :
 + 1. What is WordPress?
@@ -296,6 +299,7 @@ sudo nano /usr/local/bin/monitoring.sh
 	------------------------------------------------------------------------
 + In short, Prometheus is great for keeping your systems healthy, tracking performance, and reacting to problems faster.
 ------------------------------------------------------------------------
+**=========================================================================================================**
 ## III - Sources
 + (https://github.com/42-adbouras/Born2beroot-1337MED/tree/master)
 + (https://github.com/RIDWANE-EL-FILALI/Born2beroot/blob/master/Configuration.md)
