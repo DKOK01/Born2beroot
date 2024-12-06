@@ -136,13 +136,40 @@ sudo chmod +x /usr/local/bin/monitoring.sh
 + Each line in the crontab file follows this format: `minute hour day month weekday <command>`
 ------------------------------------------------------------------------
 ## BUNUS
+### what is WordPress, what is lighttpd, what is PHP, what is MariaDB, ow do they work together :
++ 1. What is WordPress?
+	+ WordPress is a tool for creating websites and blogs.
+	+ It’s user-friendly and doesn’t require coding knowledge.
+	+ Example: You can use WordPress to create a blog, portfolio, or even an online store.
+	------------------------------------------------------------------------
++ 2. What is lighttpd?
+	+ lighttpd is a web server.
+	+ It delivers your website (e.g., WordPress) to users’ browsers when they visit your site.
+	+ Think of it as the “waiter” that brings the website (stored on your VM) to people online.
+	------------------------------------------------------------------------
++ 3. What is PHP?
+	+ PHP is a programming language that runs on the server.
+	+ WordPress uses PHP to process requests like creating posts or loading pages dynamically.
+	+ Example: If someone visits your WordPress blog, PHP generates the page they see.
+	------------------------------------------------------------------------
++ 4. What is MariaDB?
+	+ MariaDB is a database system that stores your website data.
+	+ It keeps everything like blog posts, user accounts, and comments organized.
+	+ WordPress retrieves data from MariaDB when needed (e.g., when displaying a blog post).
+	------------------------------------------------------------------------
++ 5. How Do They Work Together?
+	When someone visits your WordPress site:
 
+	+ lighttpd (web server) receives the visitor’s request.
+	+ PHP processes the request (e.g., fetching blog posts or login pages).
+	+ MariaDB provides the necessary data (e.g., blog content or user details).
+	+ lighttpd sends the generated page to the user’s browser.
+	+ It’s like:
 
-
-
-
-
-
+		+ WordPress: The website.
+		+ lighttpd: The delivery service.
+		+ PHP: The chef preparing the website.
+		+ MariaDB: The storage room with all the ingredients (data).
 ------------------------------------------------------------------------
 ### Prometheus service :
 + What is Prometheus? :
