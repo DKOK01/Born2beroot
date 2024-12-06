@@ -7,22 +7,23 @@
 -----------------------------------------------------------------------
 **=========================================================================================================**
 ## I . Virtuallization
+
 + 1 . What is a **Virtual Machine** (VM)?
 	+ A virtual machine is a computer inside another computer.
 	+ It runs its own operating system (e.g., Linux) but uses the hardware (CPU, RAM, storage) of the main machine (called the host).
 	+ Example: Your main computer runs Windows, but you install a VM to run Linux without affecting your main system.
 
 	-----------------------------------------------------------------------
+  
 + 2 . How Does **Virtualization** Work?
 	+ **Virtualization** allows you to split your physical computer into multiple virtual computers (VMs).
 	+ A software called a **hypervisor** manages the VMs and shares the host’s hardware between them.
 	+ Each VM behaves like a real computer with its own OS and applications.
  
 	![image](https://github.com/user-attachments/assets/f3c14b18-05d2-4ba3-aea3-d918871d6533)
-		<p align="center">
-  <img src="(https://github.com/user-attachments/assets/f3c14b18-05d2-4ba3-aea3-d918871d6533)" style="width:500px">
-	</p>
+	
 	-----------------------------------------------------------------------
+  
 + 3 . Advantages of a **Virtual Machine**
 	+ Isolation: VMs are separate, so problems in one VM don’t affect the host or other VMs.
 	+ Testing: Safe for experimenting with new systems or software.
@@ -31,6 +32,7 @@
 	+ Efficient Use of Resources: Share your computer's hardware among multiple VMs.
 
 	-----------------------------------------------------------------------
+  
 + 4 . Types of **Hypervisors**
 	+ A hypervisor is the software that creates and manages VMs.
 
@@ -48,6 +50,7 @@
 	</p>
 
 	-----------------------------------------------------------------------
+  
 + 5 . What is **System Administration**?
 	+ System Administration involves managing and maintaining computer systems and networks.
 	+ Tasks include:
@@ -113,8 +116,10 @@
 ----------------------------------------------------------------------
 **=========================================================================================================**
 ## Monitoring Script
+
 + The `monitoring.sh` script is a core part of your project. It will display essential system information in a clear format, including CPU usage, memory, disk usage, active users, and more. Below are detailed steps to write, configure, and test the script.
 ----------------------------------------------------------------------
+
 ### Step 1: Understand What the Script Needs to Display
 + The script should display the following information:
 
@@ -132,6 +137,7 @@
   + Firewall Status
   + Each of these will be implemented using Linux commands.
 ----------------------------------------------------------------------
+
 ### Step 2: Create and Edit the Script
 + Create the file:
 ```
@@ -140,6 +146,7 @@ sudo nano /usr/local/bin/monitoring.sh
 + This will create the script file and open it in the nano editor.
 + We use this path `/usr/local/bin/` : BCS Allows you to run the script by simply typing its name (e.g., monitoring.sh) without specifying the full path.
 ----------------------------------------------------------------------
+
 + Write the Script:
 ```
     #!/bin/bash
@@ -220,12 +227,14 @@ sudo nano /usr/local/bin/monitoring.sh
   ------------------------------------------------------------------------ 
   + `wall` : The wall command in Linux is used to broadcast messages to all logged-in users on the system. This can be helpful for administrators to send important announcements, warnings, or maintenance notices.
   ------------------------------------------------------------------------
+  
 ### Step 3: Make the Script Executable
 + After saving the script, make it executable:
 	```
 	sudo chmod +x /usr/local/bin/monitoring.sh
 	```
 ------------------------------------------------------------------------
+
 ### Step 4: Automate the Script Execution
 + Schedule the Script with Cron:
   + Open the crontab editor:
