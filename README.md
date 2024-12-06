@@ -66,17 +66,17 @@
 ## II . LVM
 
 + 1 . What is LVM (Logical Volume Manager)?
-		+ LVM is a tool to manage storage on Linux more flexibly than traditional partitions.
-		+ It allows you to resize, add, or combine storage space without restarting the system.
-		+ Instead of using fixed partitions, LVM lets you group disks together and divide the space into "logical volumes.".
+	+ LVM is a tool to manage storage on Linux more flexibly than traditional partitions.
+	+ It allows you to resize, add, or combine storage space without restarting the system.
+	+ Instead of using fixed partitions, LVM lets you group disks together and divide the space into "logical volumes.".
   
 	-----------------------------------------------------------------------
 
 + 2 . How Does LVM Work?
-		+ Think of it like a pool of storage.
-		+ You combine one or more physical disks into a pool.
-		+ You create logical volumes (similar to partitions) from the pool.
-		+ You can easily resize or manage these volumes as your needs change
+		+ Think of it like a pool of storage:
+			+ You combine one or more physical disks into a pool.
+			+ You create logical volumes (similar to partitions) from the pool.
+			+ You can easily resize or manage these volumes as your needs change
   
 	-----------------------------------------------------------------------
 
