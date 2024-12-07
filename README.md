@@ -1,11 +1,11 @@
-# Born2beroot
+# **Born2beroot**
 
 + Born2beroot is a project that aims to teach us about **virtualization** and **system administration** by setting up a **server** and configuring its security for the mandatory part and for the bonus part you'll try to host a site.
 
 -----------------------------------------------------------------------
 
 ### Install your virtual machine
-+ for Debian and if you want to do the bonus part :
++ for **Debian** and if you want to do the bonus part :
 + (https://youtu.be/73r3JbkCVy0?si=A68GjkJJofwhX0f0)
 
 -----------------------------------------------------------------------
@@ -71,14 +71,14 @@
 
 ## II . LVM
 
-+ 1 . What is LVM (Logical Volume Manager)?
++ 1 . **What is LVM (Logical Volume Manager)?**
 	+ LVM is a tool to manage storage on Linux more flexibly than traditional partitions.
 	+ It allows you to resize, add, or combine storage space without restarting the system.
 	+ Instead of using fixed partitions, LVM lets you group disks together and divide the space into "logical volumes.".
   
 	-----------------------------------------------------------------------
 
-+ 2 . How Does LVM Work?
++ 2 . **How Does **LVM** Work?**
 	+ Think of it like a pool of storage:
 		+ You combine one or more physical disks into a pool.
 		+ You create logical volumes (similar to partitions) from the pool.
@@ -86,36 +86,36 @@
   
 	-----------------------------------------------------------------------
 
-+ 3 . What Are the Components of LVM?
++ 3 . **What Are the Components of LVM?**
 	+ LVM has three main components:
 
-	+ Physical Volumes (PVs):
+	+ **Physical Volumes (PVs)**:
 
 		+ These are the actual disks or partitions (e.g., /dev/sda1).
 		+ Example: A hard drive or SSD.
-	+ Volume Groups (VGs):
+	+ **Volume Groups (VGs)**:
 
 		+ Combine one or more physical volumes into a pool of storage.
 		+ Example: Combine two disks into one large storage pool.
-	+ Logical Volumes (LVs):
+	+ **Logical Volumes (LVs)**:
 
 		Created from the volume group.
 		These are the "usable partitions" where you can store files.
-		Example: /home, /var, or /mnt/data.
+		Example: `/home`, `/var`, or `/mnt/data`.
 
 		![image](https://github.com/user-attachments/assets/9a1b6449-ddf7-4d9f-8649-512767851107)
 
 	-----------------------------------------------------------------------
 
-+ 4 . Why Do We Use LVM?
-	+ Flexibility: You can resize volumes (increase or reduce storage) as needed.
-	+ Snapshots: You can create backups (snapshots) without stopping the system.
-	+ Better Disk Usage: Combine multiple small disks into one large storage pool.
-	+ Easier Management: Add more storage to the system without complex re-partitioning.
++ 4 . **Why Do We Use LVM?**
+	+ **Flexibility**: You can resize volumes (increase or reduce storage) as needed.
+	+ **Snapshots**: You can create backups (snapshots) without stopping the system.
+	+ **Better Disk Usage**: Combine multiple small disks into one large storage pool.
+	+ **Easier Management**: Add more storage to the system without complex re-partitioning.
  
  	-----------------------------------------------------------------------
 
-+ 5 . What Are Partitions?
++ 5 . **What Are Partitions?**
 	+ A partition is a way to divide a hard drive into separate sections.
 	+ Each partition acts as an independent storage space.
 	+ Example:
@@ -295,7 +295,7 @@
 		+  **log_output**: Records output during sudo sessions.
 		+  **requiretty**: Ensures a TTY is required to run sudo, blocking non-interactive or malicious scripts from exploiting sudo.
 
-	+ If the /var/log/sudo directory doesn’t exist, we might have to mkdir sudo in /var/log/.
+	+ If the `/var/log/sudo` directory doesn’t exist, we might have to mkdir sudo in `/var/log/`.
 	+ Now, we can have root privileges in secure way, without having to log into the root session.
 
 **==========================================================================================**
