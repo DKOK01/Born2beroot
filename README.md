@@ -204,35 +204,38 @@
 	+ sudo (short for "superuser do") is a command in Linux that allows a user to run programs or execute commands with administrator (superuser/root) privileges.
 	+ It is a way to temporarily gain more power to perform tasks that require special permissions.	 
 	+ Allows specific users to execute specific commands without giving them full administrator access.
+
+	----------------------------------------------------------------------
+
 + 2 . Instaling sudo:
-	1 . Login as the Root User
+	+ 1 . Login as the Root User
 		- To install sudo, you need root access. Start by logging in as the root user:
 		```
 		su root
 		```
 		+ Enter the root password when prompted.
-	2 . Update and Upgrade the System
+	+ 2 . Update and Upgrade the System
 		+ Ensure your package lists and system are up to date:
 		```
 		apt update
 		apt upgrade
 		Install sudo
 		```
-	3 . Install the sudo package:
+	+ 3 . Install the sudo package:
 		```
 		apt install sudo
 		```
-	4 . Add Your Regular User to the sudo Group
+	+ 4 . Add Your Regular User to the sudo Group
 		+ Grant your regular user the ability to use sudo by adding them to the sudo group:
 		```
 		sudo usermod -aG sudo <username>
 		```
-	5 . Verify the User was Added to the sudo Group
+	+ 5 . Verify the User was Added to the sudo Group
 		+ Check if the user is now part of the sudo group:
 		```
 		getent group sudo
 		```
-	6 . Test sudo Privileges
+	+ 6 . Test sudo Privileges
 		+ Exit the root session to return to your regular user:
 		```
 		exit
