@@ -252,19 +252,48 @@
 	+ To meet the security requirements outlined in the Born2beroot subject, you must configure sudo with the following features:
 
 	+ Security Enhancements to Configure
-		+ 1 . Limit Authentication Attempts
+		+ 1 . **Limit Authentication Attempts**
 			+ Restrict sudo to allow only 3 incorrect password attempts before failing.
 
-	  	+ 2 . Custom Bad Password Message
+	  	+ 2 . **Custom Bad Password Message**
 			+ Display a custom error message for incorrect password attempts.
 
-		+ 3 . Log sudo Commands
+		+ 3 . **Log sudo Commands**
 			+ Ensure all sudo commands are logged in /var/log/sudo/.
 
-		+ 4 . Activate TTY Requirement
+		+ 4 . **Activate TTY Requirement**
 			+ Require a TTY (terminal) to prevent malicious software from granting itself root privileges via sudo.
 
-	
+	+ Steps to Configure sudo
+		+ 1 . Open the sudoers File Safely
+			+ From the root session, use the `visudo` command to edit the sudoers file securely:
+			```
+			sudo visudo
+			```
+			+ This ensures any syntax errors in the configuration will not break the system.
+		+ 2 . Add the Following Configuration Lines In the sudoers.tmp file opened by `visudo`, append these lines to enable the required settings:
+
+			```
+			Defaults     passwd_tries=3
+			Defaults     secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+			Defaults     badpass_message="Wrong password. Try again!"
+			Defaults     logfile="/var/log/sudo/sudo.log"
+			Defaults     log_input
+			Defaults     log_output
+			Defaults     requiretty
+			```
+		+ 3 .  Save and Exit
+			+ After making the changes, save and close the file.
+			+ In visudo, press CTRL + X, then press Y, and hit Enter to confirm.
+
+	+ Explanation of Each Configuration Line
+			**passwd_tries=3**: Limits users to 3 incorrect password attempts when using sudo.
+			**secure_path=...**: Sets a secure path for running commands under sudo.
+			**badpass_message="..."**: Displays the custom message when an incorrect password is entered.
+			**logfile="/var/log/sudo/sudo.log"**: Logs all sudo commands to a specific file for auditing purposes.
+			**log_input**: Records input during sudo sessions.
+			**log_output**: Records output during sudo sessions.
+			**requiretty**: Ensures a TTY is required to run sudo, blocking non-interactive or malicious scripts from exploiting sudo.
 
 
 
