@@ -344,7 +344,21 @@
 ----------------------------------------------------------------------
 **==========================================================================================**
 
+## AppArmor
 
+- 1 . What is **AppArmor**?
+	**AppArmor** (Application Armor) is a Linux security framework that helps control what applications can do on the system. It works by applying **mandatory access controls (MAC)** to restrict an application's access to files, networks, and system 	resources, even if the application is compromised.
+
+- How It Works:
+	- **AppArmor** uses **profiles** that define what an application is allowed or not allowed to do.
+	- Profiles can be in **complain mode** (logs violations without enforcing them) or **enforce mode** (actively restricts application behavior).
+
+- Why Use **AppArmor**?
+	- **Enhances security:** Limits the damage a compromised application can cause.
+	- **Lightweight:** Simple to set up and manage compared to other security tools like **SELinux**.
+	- **Granular control:** You can create specific rules for individual applications.
+
+- For example, you can restrict a web browser from accessing sensitive files or prevent a server from modifying certain directories. This makes **AppArmor** a useful tool for securing Linux systems.
 
 
 
