@@ -287,15 +287,16 @@
 			+ In visudo, press CTRL + X, then press Y, and hit Enter to confirm.
 
 	+ Explanation of Each Configuration Line
-			**passwd_tries=3**: Limits users to 3 incorrect password attempts when using sudo.
-			**secure_path=...**: Sets a secure path for running commands under sudo.
-			**badpass_message="..."**: Displays the custom message when an incorrect password is entered.
-			**logfile="/var/log/sudo/sudo.log"**: Logs all sudo commands to a specific file for auditing purposes.
-			**log_input**: Records input during sudo sessions.
-			**log_output**: Records output during sudo sessions.
-			**requiretty**: Ensures a TTY is required to run sudo, blocking non-interactive or malicious scripts from exploiting sudo.
+			+ **passwd_tries=3**: Limits users to 3 incorrect password attempts when using sudo.
+			+ **secure_path=...**: Sets a secure path for running commands under sudo.
+			+ **badpass_message="..."**: Displays the custom message when an incorrect password is entered.
+			+ **logfile="/var/log/sudo/sudo.log"**: Logs all sudo commands to a specific file for auditing purposes.
+			+ **log_input**: Records input during sudo sessions.
+			+ **log_output**: Records output during sudo sessions.
+			+ **requiretty**: Ensures a TTY is required to run sudo, blocking non-interactive or malicious scripts from exploiting sudo.
 
-
+	+ If the /var/log/sudo directory doesn’t exist, we might have to mkdir sudo in /var/log/.
+	+ Now, we can have root privileges in secure way, without having to log into the root session.
 
 **=========================================================================================================**
 ## Monitoring Script
