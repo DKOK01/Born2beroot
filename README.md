@@ -248,6 +248,7 @@
 		```
 		root
 		```
+	----------------------------------------------------------------------
 + 3 . Configuring sudo
 	+ To meet the security requirements outlined in the Born2beroot subject, you must configure sudo with the following features:
 
@@ -297,6 +298,61 @@
 
 	+ If the `/var/log/sudo` directory doesn’t exist, we might have to mkdir sudo in `/var/log/`.
 	+ Now, we can have root privileges in secure way, without having to log into the root session.
+
+----------------------------------------------------------------------
+**==========================================================================================**
+
+## Packet Management in Debian
+
+- What is **APT**?
+	- **APT** stands for **Advanced Package Tool**, and it is a **command-line** tool in Debian-based Linux distributions (like Ubuntu) for managing software packages. With **APT**, you can:
+
+		- **Install** software: apt install <package_name>
+		- **Update** the system's package list: apt update
+		- **Upgrade** installed software: apt upgrade
+		- **Remove** software: apt remove <package_name>
+	- **APT** simplifies software installation by resolving **dependencies** automatically.
+
+ 	----------------------------------------------------------------------
+
+- What is **Aptitude**?
+	- **Aptitude** is a **higher-level package manager** that provides both:
+		- A command-line interface similar to APT.
+		- A **text-based user interface** (TUI) that allows users to navigate and manage packages interactively.
+		- Perform all tasks that APT does (install, update, upgrade, etc.).
+		- Use a more user-friendly interface to manage and browse packages.
+
+	----------------------------------------------------------------------
+
+- Differences Between **APT** and **Aptitude**:
+
+	- **Interface**:
+		- APT: Command-line only.
+		- Aptitude: Offers both a command-line interface and a text-based user interface (TUI).
+
+	- **User Experience**:
+		- APT: Requires typing all commands manually, which can be less intuitive.
+		- Aptitude: Easier for beginners as it provides an interactive navigation experience.
+
+	- **Dependency Handling**:
+		- APT: Resolves package dependencies effectively.
+		- Aptitude: Handles dependencies more robustly and provides better suggestions for conflicts.
+	- **Which Should You Use**?
+		- APT: Best for quick, simple tasks via the command line.
+		- Aptitude: Useful for users who want a visual, interactive experience or need better control over resolving dependency conflicts.
+
+----------------------------------------------------------------------
+**==========================================================================================**
+
+
+
+
+
+
+
+
+
+
 
 **==========================================================================================**
 ## Monitoring Script
