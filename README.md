@@ -207,9 +207,9 @@
 
 	----------------------------------------------------------------------
 
-+ 2 . Instaling sudo:
++ 2 . Installing sudo:
 	+ 1 . Login as the Root User
-		- To install sudo, you need root access. Start by logging in as the root user:
+		+ To install sudo, you need root access. Start by logging in as the root user:
 		```
 		su root
 		```
@@ -219,7 +219,6 @@
 		```
 		apt update
 		apt upgrade
-		Install sudo
 		```
 	+ 3 . Install the sudo package:
 		```
@@ -249,7 +248,23 @@
 		```
 		root
 		```
++ 3 . Configuring sudo
+	+ To meet the security requirements outlined in the Born2beroot subject, you must configure sudo with the following features:
 
+	+ Security Enhancements to Configure
+		+ Limit Authentication Attempts
+			+ Restrict sudo to allow only 3 incorrect password attempts before failing.
+
+		+ Custom Bad Password Message
+			+ Display a custom error message for incorrect password attempts.
+
+		+ Log sudo Commands
+			+ Ensure all sudo commands are logged in /var/log/sudo/.
+
+		+ Activate TTY Requirement
+			+ Require a TTY (terminal) to prevent malicious software from granting itself root privileges via sudo.
+
+	
 
 
 
