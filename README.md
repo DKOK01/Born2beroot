@@ -252,16 +252,16 @@
 	+ To meet the security requirements outlined in the Born2beroot subject, you must configure sudo with the following features:
 
 	+ Security Enhancements to Configure
-		1 . Limit Authentication Attempts
+		+ 1 . Limit Authentication Attempts
 			+ Restrict sudo to allow only 3 incorrect password attempts before failing.
 
-	  	2 . Custom Bad Password Message
+	  	+ 2 . Custom Bad Password Message
 			+ Display a custom error message for incorrect password attempts.
 
-		3 . Log sudo Commands
+		+ 3 . Log sudo Commands
 			+ Ensure all sudo commands are logged in /var/log/sudo/.
 
-		4 . Activate TTY Requirement
+		+ 4 . Activate TTY Requirement
 			+ Require a TTY (terminal) to prevent malicious software from granting itself root privileges via sudo.
 
 	
