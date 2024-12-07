@@ -9,7 +9,7 @@
 + (https://youtu.be/73r3JbkCVy0?si=A68GjkJJofwhX0f0)
 
 -----------------------------------------------------------------------
-**=========================================================================================================**
+**==========================================================================================**
 
 ## I . Virtuallization
 
@@ -67,7 +67,7 @@
 	+ Example: A system administrator (sysadmin) ensures a company’s servers run smoothly.
 
 ----------------------------------------------------------------------
-**=========================================================================================================**
+**==========================================================================================**
 
 ## II . LVM
 
@@ -123,7 +123,7 @@
 		+ One partition for user data (e.g., /home).
   
 ----------------------------------------------------------------------
-**=========================================================================================================**
+**==========================================================================================**
 
 ## III . Linux File System 
 
@@ -196,7 +196,7 @@
 		+ Temporary mount points for storage devices like USBs or CDs.
 
 ----------------------------------------------------------------------
-**=========================================================================================================**
+**==========================================================================================**
 
 ## IV . SUDO
 
@@ -298,7 +298,7 @@
 	+ If the /var/log/sudo directory doesn’t exist, we might have to mkdir sudo in /var/log/.
 	+ Now, we can have root privileges in secure way, without having to log into the root session.
 
-**=========================================================================================================**
+**==========================================================================================**
 ## Monitoring Script
 
 + The `monitoring.sh` script is a core part of your project. It will display essential system information in a clear format, including CPU usage, memory, disk usage, active users, and more. Below are detailed steps to write, configure, and test the script.
@@ -435,7 +435,7 @@ sudo nano /usr/local/bin/monitoring.sh
 + Each line in the crontab file follows this format: `minute hour day month weekday <command>`
 
 ------------------------------------------------------------------------
-**=========================================================================================================**
+**==========================================================================================**
 ## BONUS
 
 ### what is WordPress, what is lighttpd, what is PHP, what is MariaDB, ow do they work together :
@@ -517,7 +517,7 @@ sudo nano /usr/local/bin/monitoring.sh
 + In short, Prometheus is great for keeping your systems healthy, tracking performance, and reacting to problems faster.
 
 ------------------------------------------------------------------------
-**=========================================================================================================**
+**==========================================================================================**
 
 ## III - Sources
 + (https://github.com/42-adbouras/Born2beroot-1337MED/tree/master)
