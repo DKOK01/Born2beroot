@@ -364,7 +364,7 @@
 
 ## VIIII . UFW
 
-+ 1. What is **UFW**?
++ 1 . What is **UFW**?
 	+ **UFW** (Uncomplicated Firewall) is a simplified tool for managing **firewall** rules in Linux systems. It provides an easy way to configure the firewall to allow or block specific network traffic without requiring advanced knowledge of underlying firewall technologies.
 
 	----------------------------------------------------------------------
@@ -384,31 +384,37 @@
 
 	----------------------------------------------------------------------
 
-+ 4 . What are IP Addresses?
++ 4 . What are **IP Addresses**?
 	+ An IP address is a unique identifier for a device on a network. It's like a home address but for computers, allowing them to send and receive data.
 
-+ 5 . What are Ports?
++ 5 . What are **Ports**?
 	+ A port is a virtual endpoint used to handle specific types of network communication. It’s like a "door" that applications use to send and receive data.
 
 + 6 . How They Work Together:
-	+ IP addresses identify devices on a network.
-	+ Ports define which application/service the traffic is intended for.
-	+ Firewalls (like UFW) manage which IP addresses and ports can communicate.
-	+ UFW simplifies managing firewall rules, ensuring that only safe traffic is allowed.
+	+ **IP addresses** identify devices on a network.
+	+ **Ports** define which application/service the traffic is intended for.
+	+ **Firewalls** (like UFW) manage which IP addresses and ports can communicate.
+	+ **UFW** simplifies managing firewall rules, ensuring that only safe traffic is allowed.
 
 	----------------------------------------------------------------------
 
-+ 7 . Installing & Configuring UFW:
++ 7 . Installing & Configuring **UFW**:
 	+ As the subject suggests the firewall must be active when you launch your virtual machine.
-		$ sudo apt update
-		$ sudo apt upgrade
-		$ sudo apt install ufw
-		$ sudo ufw enable
+		```
+		sudo apt update
+		sudo apt upgrade
+		sudo apt install ufw
+		sudo ufw enable
+  		```
 	+ To check if UFW up and running we can use the command line:
-		$ sudo systemctl status ufw
+ 		```
+		sudo systemctl status ufw
+		```
 		+ We should see “active” in green.
 	+ Also we have to leave only port 4242 open.
+		```
 		$ sudo ufw allow 4242
+		```
 
 ----------------------------------------------------------------------
 **==========================================================================================**
