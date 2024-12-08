@@ -421,21 +421,21 @@
 
 ## X . SSH
 
-+ 1 . What is **SSH**?
++ **1 . What is **SSH**?**
 	+ **SSH** (*Secure Shell* is a protocol that allows you to securely access and control a remote computer over a network. It provides a secure way to log in, transfer files, and execute commands on another machine.
 
 	----------------------------------------------------------------------
 
-+ 2 . How Does **SSH** Work?
++ **2 . How Does **SSH** Work?**
 	+ **Encryption** : SSH encrypts the communication between your computer (client) and the remote machine (server), ensuring that data cannot be intercepted or read by others.
 	+ **Authentication** : SSH uses a username and password, or a more secure method like **SSH keys**, to verify the user’s identity.
 	+ **Connection** : Once authenticated, you can interact with the remote machine as if you were directly using it.
 
 	----------------------------------------------------------------------
 
-+ 3 . Installing & Configuring SSH
++ **3 . Installing & Configuring SSH**
 
-	+ 1. Installing OpenSSH
+	+ 1 . Installing OpenSSH
 		+ To use the SSH protocol and configure it to route through port 4242:
 
 		+ Install OpenSSH-Server (for allowing remote connections).
@@ -456,7 +456,7 @@
 	----------------------------------------------------------------------
 
 
-	+ 2. Modifying SSH Port
+	+ 2 . Modifying SSH Port
 		+ To configure SSH to listen on port 4242:
 
 		+ Open the SSH configuration file:
@@ -470,7 +470,7 @@
 
 	----------------------------------------------------------------------
 
-	+ 3. Disabling Root Login for Security
+	+ 3 . Disabling Root Login for Security
 		+ The Born2beroot subject specifies that root login via SSH must not be allowed.
 
 		+ Find the following line in the configuration file:
@@ -484,7 +484,7 @@
 
 	----------------------------------------------------------------------
 
-	+ 4. Restarting SSH to Apply Changes
+	+ 4 . Restarting SSH to Apply Changes
 		+ After modifying the configuration, restart the SSH service:
 			```
 			$ sudo systemctl restart ssh
@@ -492,12 +492,12 @@
 
 	----------------------------------------------------------------------
 
-	+ 5. Configuring Firewall
+	+ 5 . Configuring Firewall
 		+ Authorize SSH to listen on port 4242 by updating your firewall rules. You may need to remove any automatic rule for port 22 added during the OpenSSH installation.
 
 	----------------------------------------------------------------------
 
-	+ 7. Logging into Born2beroot Server via SSH
+	+ 7 . Logging into Born2beroot Server via SSH
 		+ To test the SSH connection:
 
 		+ Ensure the virtual machine is turned on.
@@ -508,6 +508,7 @@
 		+ Replace:
 			+ `<username_server>` with the virtual machine’s username.
 			+ `<server_IP_address>` with the virtual machine’s IP address.
+
 		+ Enter your user password, and you will gain access to the virtual machine. You’ll notice the command prompt changes to reflect the virtual machine’s hostname.
 
 
