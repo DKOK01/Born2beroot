@@ -362,7 +362,7 @@
 
 **==========================================================================================**
 
-## VIIII . UFW
+## IX . UFW
 
 + 1 . What is **UFW**?
 	+ **UFW** (Uncomplicated Firewall) is a simplified tool for managing **firewall** rules in Linux systems. It provides an easy way to configure the firewall to allow or block specific network traffic without requiring advanced knowledge of underlying firewall technologies.
@@ -417,6 +417,23 @@
 		```
 
 ----------------------------------------------------------------------
+**==========================================================================================**
+
+## X . SSH
+
++ 1 . What is **SSH**?
+	+ **SSH** (*Secure Shell* is a protocol that allows you to securely access and control a remote computer over a network. It provides a secure way to log in, transfer files, and execute commands on another machine.
+
+	----------------------------------------------------------------------
+
++ 2 . How Does **SSH** Work?
+	+ **Encryption** : SSH encrypts the communication between your computer (client) and the remote machine (server), ensuring that data cannot be intercepted or read by others.
+	+ **Authentication** : SSH uses a username and password, or a more secure method like **SSH keys**, to verify the user’s identity.
+	+ **Connection** : Once authenticated, you can interact with the remote machine as if you were directly using it.
+
+
+
+
 **==========================================================================================**
 
 ## Monitoring Script
