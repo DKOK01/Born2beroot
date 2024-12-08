@@ -302,7 +302,7 @@
 ----------------------------------------------------------------------
 **==========================================================================================**
 
-## VII . Packet Management in Debian
+## VII . Packet Management in Debian APT and Aptitude
 
 - What is **APT**?
 	- **APT** stands for **Advanced Package Tool**, and it is a **command-line** tool in Debian-based Linux distributions (like Ubuntu) for managing software packages. With **APT**, you can:
@@ -366,13 +366,53 @@
 
 + 1. What is **UFW**?
 	+ **UFW** (Uncomplicated Firewall) is a simplified tool for managing **firewall** rules in Linux systems. It provides an easy way to configure the firewall to allow or block specific network traffic without requiring advanced knowledge of underlying firewall technologies.
+
 	----------------------------------------------------------------------
 
++ 2 . What is a **Firewall**?
+	+ A firewall is a security system that monitors and controls incoming and outgoing network traffic based on predefined rules. Its purpose is to create a barrier between trusted internal networks and untrusted external networks, like the internet.
+	+ Types of Firewalls:
+		+ **Network Firewalls:** Protect entire networks.
+		+ **Host-based Firewalls:** Protect individual devices.
 
+	----------------------------------------------------------------------
 
++ 3 . Relationship Between **UFW**and **Firewalls**
+	+ **UFW** is a tool that manages the **iptables** (the actual **firewall** technology in Linux).
+	+ It simplifies complex **firewall** rule setups, making it easier to block/allow specific traffic without needing to manually edit **iptables** rules.
+	+ **UFW** makes managing **firewall** rules beginner-friendly.
 
+	----------------------------------------------------------------------
 
++ 4 . What are IP Addresses?
+	+ An IP address is a unique identifier for a device on a network. It's like a home address but for computers, allowing them to send and receive data.
+
++ 5 . What are Ports?
+	+ A port is a virtual endpoint used to handle specific types of network communication. It’s like a "door" that applications use to send and receive data.
+
++ 6 . How They Work Together:
+	+ IP addresses identify devices on a network.
+	+ Ports define which application/service the traffic is intended for.
+	+ Firewalls (like UFW) manage which IP addresses and ports can communicate.
+	+ UFW simplifies managing firewall rules, ensuring that only safe traffic is allowed.
+
+	----------------------------------------------------------------------
+
++ 7 . Installing & Configuring UFW:
+	+ As the subject suggests the firewall must be active when you launch your virtual machine.
+		$ sudo apt update
+		$ sudo apt upgrade
+		$ sudo apt install ufw
+		$ sudo ufw enable
+	+ To check if UFW up and running we can use the command line:
+		$ sudo systemctl status ufw
+		+ We should see “active” in green.
+	+ Also we have to leave only port 4242 open.
+		$ sudo ufw allow 4242
+
+----------------------------------------------------------------------
 **==========================================================================================**
+
 ## Monitoring Script
 
 + The `monitoring.sh` script is a core part of your project. It will display essential system information in a clear format, including CPU usage, memory, disk usage, active users, and more. Below are detailed steps to write, configure, and test the script.
