@@ -431,6 +431,91 @@
 	+ **Authentication** : SSH uses a username and password, or a more secure method like **SSH keys**, to verify the user’s identity.
 	+ **Connection** : Once authenticated, you can interact with the remote machine as if you were directly using it.
 
+	----------------------------------------------------------------------
+
++ 3 . Installing & Configuring SSH
+
+	+ 1. Installing OpenSSH
+		+ To use the SSH protocol and configure it to route through port 4242:
+
+		+ Install OpenSSH-Server (for allowing remote connections).
+		+ Install OpenSSH-Client (if you want to connect to other machines from Born2beroot).
+		+ Commands:
+			```
+			$ sudo apt update
+			$ sudo apt upgrade
+			$ sudo apt install openssh-server
+			$ sudo systemctl enable ssh.service
+			```
+		+ Check if SSH is running:
+			```
+			$ sudo systemctl status ssh.service
+			```
+		+ Look for “active” in green to confirm that the service is running.
+
+	----------------------------------------------------------------------
+
+
+	+ 2. Modifying SSH Port
+		+ To configure SSH to listen on port 4242:
+
+		+ Open the SSH configuration file:
+			```
+			$ sudo nano /etc/ssh/sshd_config
+			```
+		+ Find the line that reads `#Port 22`, uncomment it, and change it to:
+			```
+			Port 4242
+			```
+
+	----------------------------------------------------------------------
+
+	+ 3. Disabling Root Login for Security
+		+ The Born2beroot subject specifies that root login via SSH must not be allowed.
+
+		+ Find the following line in the configuration file:
+			```
+			#PermitRootLogin yes
+			```
+		+ Uncomment it and set it to:
+			```
+			PermitRootLogin no
+			```
+
+	----------------------------------------------------------------------
+
+	+ 4. Restarting SSH to Apply Changes
+		+ After modifying the configuration, restart the SSH service:
+			```
+			$ sudo systemctl restart ssh
+			```
+
+	----------------------------------------------------------------------
+
+	+ 5. Configuring Firewall
+		+ Authorize SSH to listen on port 4242 by updating your firewall rules. You may need to remove any automatic rule for port 22 added during the OpenSSH installation.
+
+	----------------------------------------------------------------------
+
+	+ 7. Logging into Born2beroot Server via SSH
+		+ To test the SSH connection:
+
+		+ Ensure the virtual machine is turned on.
+		+ Use the host machine terminal and run:
+			```
+			$ ssh <username_server>@<server_IP_address> -p 4242
+			```
+		+ Replace:
+			+ `<username_server>` with the virtual machine’s username.
+			+ `<server_IP_address>` with the virtual machine’s IP address.
+		+ Enter your user password, and you will gain access to the virtual machine. You’ll notice the command prompt changes to reflect the virtual machine’s hostname.
+
+
+
+
+
+
+
 
 
 
