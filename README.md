@@ -302,7 +302,7 @@
 ----------------------------------------------------------------------
 **==========================================================================================**
 
-## Packet Management in Debian
+## VII . Packet Management in Debian
 
 - What is **APT**?
 	- **APT** stands for **Advanced Package Tool**, and it is a **command-line** tool in Debian-based Linux distributions (like Ubuntu) for managing software packages. With **APT**, you can:
@@ -344,7 +344,7 @@
 ----------------------------------------------------------------------
 **==========================================================================================**
 
-## AppArmor
+## VIII . AppArmor
 
 - 1 . What is **AppArmor**?
 	**AppArmor** (Application Armor) is a Linux security framework that helps control what applications can do on the system. It works by applying **mandatory access controls (MAC)** to restrict an application's access to files, networks, and system 	resources, even if the application is compromised.
@@ -360,9 +360,13 @@
 
 - For example, you can restrict a web browser from accessing sensitive files or prevent a server from modifying certain directories. This makes **AppArmor** a useful tool for securing Linux systems.
 
+**==========================================================================================**
 
+## VIIII . UFW
 
-
++ 1. What is **UFW**?
+	+ **UFW** (Uncomplicated Firewall) is a simplified tool for managing **firewall** rules in Linux systems. It provides an easy way to configure the firewall to allow or block specific network traffic without requiring advanced knowledge of underlying firewall technologies.
+	----------------------------------------------------------------------
 
 
 
