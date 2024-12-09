@@ -511,18 +511,105 @@
 
 		+ Enter your user password, and you will gain access to the virtual machine. You’ll notice the command prompt changes to reflect the virtual machine’s hostname.
 
-
-
-
-
-
-
-
-
-
+----------------------------------------------------------------------
 **==========================================================================================**
 
-## Monitoring Script
+## IX . Password Policy
+
++ The subject requires implementing a strong password policy with the following requirements:
+
+	+ 1 . Password Expiration:
+		+ Passwords must expire every 30 days.
+		+ Users should receive a warning message 7 days before expiration.
+
+	+ 2 . Password Modification Restriction:
+		+ Passwords cannot be modified within 2 days of the last change.
+
+	+ 3 . Password Complexity Rules:
+		+ Minimum length: 10 characters.
+		+ Must include:
+			+ At least 1 uppercase letter.
+			+ At least 1 lowercase letter.
+			+ At least 1 number.
+		+ Must not:
+			+ Contain more than 3 consecutive identical characters.
+			+ Include the user's name.
+
+	+ 4 . Additional Rules:
+		+ Passwords (except for the root password) must include at least 7 characters that were not part of the previous password.
+
+	----------------------------------------------------------------------
+
++ Step 1: Configuring Password Aging Rules
+	+ To configure expiration, modification, and warning rules:
+
+	+ Open the `/etc/login.defs` file:
+		```
+		$ sudo nano /etc/login.defs
+		```
+	+ Update the Password Aging Controls section:
+		```
+		PASS_MAX_DAYS 30
+		PASS_MIN_DAYS 2
+		PASS_WARN_AGE 7
+		```
+	+ These changes apply only to newly created users. For existing users, apply the rules manually using the `chage` command:
+		```
+		$ sudo chage -M 30 <username/root>   # Set maximum password age
+		$ sudo chage -m 2 <username/root>    # Set minimum password age
+		$ sudo chage -W 7 <username/root>    # Set warning period
+		$ sudo chage -l <username/root>      # View current password aging settings
+		```
+
+	----------------------------------------------------------------------
+
++ Step 2: Enforcing Password Quality Rules
+	+ To enforce password complexity requirements:
+
+	+ 1 . Install the password quality verification library:
+		```
+		$ sudo apt install libpam-pwquality
+  		```
+	+ 2 . Edit the `/etc/security/pwquality.conf` file:
+		```
+		$ sudo nano /etc/security/pwquality.conf
+		```
+	+ 3 . Update the following options (remove the # to uncomment):
+		```
+		# Number of characters in the new password that must not be present in the 
+		# old password.
+		difok = 7
+		# The minimum acceptable size for the new password (plus one if 
+		# credits are not disabled which is the default)
+		minlen = 10
+		# The maximum credit for having digits in the new password. If less than 0 
+		# it is the minimun number of digits in the new password.
+		dcredit = -1
+		# The maximum credit for having uppercase characters in the new password. 
+		# If less than 0 it is the minimun number of uppercase characters in the new 
+		# password.
+		ucredit = -1
+		lcredit = -1
+		# ...
+		# The maximum number of allowed consecutive same characters in the new password.
+		# The check is disabled if the value is 0.
+		maxrepeat = 3
+		# ...
+		# Whether to check it it contains the user name in some form.
+		# The check is disabled if the value is 0.
+		usercheck = 1
+		# ...
+		# Prompt user at most N times before returning with error. The default is 1.
+		retry = 3
+		# Enforces pwquality checks on the root user password.
+		# Enabled if the option is present.
+		enforce_for_root
+		# ...
+
+----------------------------------------------------------------------
+**==========================================================================================**
+
+## X . Monitoring Script
 
 + The `monitoring.sh` script is a core part of your project. It will display essential system information in a clear format, including CPU usage, memory, disk usage, active users, and more. Below are detailed steps to write, configure, and test the script.
 ----------------------------------------------------------------------
@@ -659,7 +746,7 @@ sudo nano /usr/local/bin/monitoring.sh
 
 ------------------------------------------------------------------------
 **==========================================================================================**
-## BONUS
+## XI . BONUS
 
 ### what is WordPress, what is lighttpd, what is PHP, what is MariaDB, ow do they work together :
 
@@ -742,7 +829,7 @@ sudo nano /usr/local/bin/monitoring.sh
 ------------------------------------------------------------------------
 **==========================================================================================**
 
-## III - Sources
+## XII - Sources
 + (https://github.com/42-adbouras/Born2beroot-1337MED/tree/master)
 + (https://github.com/RIDWANE-EL-FILALI/Born2beroot/blob/master/Configuration.md)
 + (https://42-cursus.gitbook.io/guide/rank-01/born2beroot/whats-a-virtual-machine)
