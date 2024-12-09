@@ -302,7 +302,7 @@
 ----------------------------------------------------------------------
 **==========================================================================================**
 
-## VII . Packet Management in Debian APT and Aptitude
+## V . Packet Management in Debian APT and Aptitude
 
 - What is **APT**?
 	- **APT** stands for **Advanced Package Tool**, and it is a **command-line** tool in Debian-based Linux distributions (like Ubuntu) for managing software packages. With **APT**, you can:
@@ -344,7 +344,7 @@
 ----------------------------------------------------------------------
 **==========================================================================================**
 
-## VIII . AppArmor
+## VI . AppArmor
 
 - 1 . What is **AppArmor**?
 	**AppArmor** (Application Armor) is a Linux security framework that helps control what applications can do on the system. It works by applying **mandatory access controls (MAC)** to restrict an application's access to files, networks, and system 	resources, even if the application is compromised.
@@ -362,7 +362,7 @@
 
 **==========================================================================================**
 
-## IX . UFW
+## VII . UFW
 
 + 1 . What is **UFW**?
 	+ **UFW** (Uncomplicated Firewall) is a simplified tool for managing **firewall** rules in Linux systems. It provides an easy way to configure the firewall to allow or block specific network traffic without requiring advanced knowledge of underlying firewall technologies.
@@ -419,7 +419,7 @@
 ----------------------------------------------------------------------
 **==========================================================================================**
 
-## X . SSH
+## VIII . SSH
 
 + **1 . What is **SSH**?**
 	+ **SSH** (*Secure Shell* is a protocol that allows you to securely access and control a remote computer over a network. It provides a secure way to log in, transfer files, and execute commands on another machine.
